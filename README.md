@@ -23,7 +23,7 @@ A simple script that brings RTSP to web. Usually helpful if you want to bring yo
 4. After building the container, you can run it as follow:
 
     ```
-    docker run -p 8000:80 rtsp2web
+    docker run -p 8000:80 -p 1935:1935 rtsp2web
     ```
 
 ### Accessing Your Live Stream
