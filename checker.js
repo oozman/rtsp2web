@@ -31,6 +31,7 @@ function runCron(delay) {
 
         // If not found, restart and re-stream.
         if (failed > restartIn) {
+            failed = 0;
             return restartParser();
         }
 
