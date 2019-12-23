@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "parser",
+      "script": "./index.js"
+    },
+    {
+      "name": "checker",
+      "script": "./checker.js",
+      "restart_delay": 30000
+    }
+  ]
+}
