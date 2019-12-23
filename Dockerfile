@@ -21,8 +21,14 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && apt-get install -
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+# Install pm2
+RUN npm install pm2 -g
+
 # App files
 COPY . /var/www/html
+
+# Install dependencies.
+RUN cd /var/www/html && npm install
 
 WORKDIR /var/www/html
 
