@@ -2,8 +2,6 @@ require('dotenv').config();
 
 const NodeMediaServer = require('node-media-server');
 
-console.log(process.env);
-
 const config = {
     rtmp: {
         port: 1935,
